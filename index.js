@@ -118,6 +118,13 @@ let randomNum = Math.floor((Math.random()*giftRx.length));
               $(`#rx`).children().eq(i).remove();
               giftRx.splice(i, 1);
           }}
+
+          if (giftGiver.length == 1){
+            const $resultsHeader3 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[0]} will buy a gift for ${giftRx[0]}`).appendTo(`#resultsList`);
+            $(`#input2`).val(``);
+            $(`#giver`).children().eq(0).remove();
+            $(`#rx`).children().eq(0).remove();
+          }
       }
 
 const $reroll = () => {
