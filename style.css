@@ -30,7 +30,7 @@ h1, h2 {
 
 #input {
   height: 40px;
-  width: 275px;
+  width: 200px;
   background-color: #ACE1AF;
 }
 
@@ -39,8 +39,8 @@ h1, h2 {
   background-color: #ACE1AF;
 }
 
-#submit {
-  width: 75px;
+#submit {margin: 0.3em;
+  width: 85px;
 }
 
 #names{
@@ -54,9 +54,20 @@ h1, h2 {
   h1, h2 {
     font-size: 1em;
   }
-}
+
 
 #submit, #submit2, #accept, #reroll{
-  height: 40px;
+  height: 25px;
+  margin: 0.3em;
+}
 
+#resultsList {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#input, #input2 {
+  width: 99%;
+  height: 30px;
+}
 }
