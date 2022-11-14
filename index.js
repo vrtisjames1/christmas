@@ -35,13 +35,13 @@ if(statement == true){
   if(giftGiver.includes(nameCollect2) == false){
         $resultsHeader.text(`Correct name spelling`).appendTo(`#resultsList`);
 
-} else if(giftGiver.length <= 2 && giftGiver[0] == giftRx[0]){
+} else if(giftGiver.length == 2 && giftGiver[0] == giftRx[0]){
     const $resultsHeader3 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[0]} will buy a gift for ${giftRx[1]}`).appendTo(`#resultsList`);
         const $resultsHeader4 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[1]} will buy a gift for ${giftRx[0]}`).appendTo(`#resultsList`);
-} else if (giftGiver.length <= 2 && giftGiver[0] == giftRx[1]){
+} else if (giftGiver.length == 2 && giftGiver[0] == giftRx[1]){
     const $resultsHeader3 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[0]} will buy a gift for ${giftRx[0]}`).appendTo(`#resultsList`);
         const $resultsHeader4 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[1]} will buy a gift for ${giftRx[1]}`).appendTo(`#resultsList`);
-} else if (giftGiver.length <= 2 && giftGiver[1] == giftRx[1]){
+} else if (giftGiver.length == 2 && giftGiver[1] == giftRx[1]){
     const $resultsHeader3 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[0]} will buy a gift for ${giftRx[1]}`).appendTo(`#resultsList`);
         const $resultsHeader4 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[1]} will buy a gift for ${giftRx[0]}`).appendTo(`#resultsList`);
 } else if (giftGiver.length == 1){
