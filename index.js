@@ -97,11 +97,12 @@ let randomNum = Math.floor((Math.random()*giftRx.length));
         }
       }
     }
+    statement=false;
   }
 // giftGiver.includes(nameCollect2.toLowerCase()) == false ||
 
       const $accept = () => {
-        statement = true;
+        statement = false;
         const $first = $('#resultsList').children().last().text();
         const $first1 = $first.split(" ")
         $(`#input2`).val(``);
@@ -125,6 +126,7 @@ let randomNum = Math.floor((Math.random()*giftRx.length));
             $(`#giver`).children().eq(0).remove();
             $(`#rx`).children().eq(0).remove();
           }
+          statement=true;
       }
 
 const $reroll = () => {
