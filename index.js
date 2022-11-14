@@ -2,6 +2,8 @@ $(() => {
 const giftGiver = [];
 const giftRx = [];
 let statement = true;
+$('#accept').hide()
+$('#reroll').hide()
 
   let nameCollect  = null;
   let start = 0;
@@ -30,6 +32,11 @@ const $results = () => {
 $resultsHeader.remove();
 
 nameCollect2 = $(`#input2`).val().toLowerCase();
+$('#submit2').hide()
+$('#accept').show()
+$('#reroll').show()
+$('#submit').hide()
+$('#input').hide()
 if(statement == true){
 
   if(giftGiver.includes(nameCollect2) == false){
@@ -102,6 +109,9 @@ let randomNum = Math.floor((Math.random()*giftRx.length));
 // giftGiver.includes(nameCollect2.toLowerCase()) == false ||
 
       const $accept = () => {
+        $('#submit2').show()
+        $('#accept').hide()
+        $('#reroll').hide()
         statement = false;
         const $first = $('#resultsList').children().last().text();
         const $first1 = $first.split(" ")
