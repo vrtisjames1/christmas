@@ -37,15 +37,39 @@ if(statement == true){
 
 } else if(giftGiver.length == 2 && giftGiver[0] == giftRx[0]){
     const $resultsHeader3 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[0]} will buy a gift for ${giftRx[1]}`).appendTo(`#resultsList`);
+      $(`#giver`).children().eq(1).remove();
+      $(`#giver`).children().eq(0).remove();
+      $(`#rx`).children().eq(1).remove();
+      $(`#rx`).children().eq(0).remove();
+      $(`#input2`).val(``);
+
+
         const $resultsHeader4 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[1]} will buy a gift for ${giftRx[0]}`).appendTo(`#resultsList`);
 } else if (giftGiver.length == 2 && giftGiver[0] == giftRx[1]){
     const $resultsHeader3 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[0]} will buy a gift for ${giftRx[0]}`).appendTo(`#resultsList`);
+    $(`#giver`).children().eq(1).remove();
+    $(`#giver`).children().eq(0).remove();
+    $(`#rx`).children().eq(1).remove();
+    $(`#rx`).children().eq(0).remove();
+    $(`#input2`).val(``);
+
+
         const $resultsHeader4 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[1]} will buy a gift for ${giftRx[1]}`).appendTo(`#resultsList`);
+
 } else if (giftGiver.length == 2 && giftGiver[1] == giftRx[1]){
     const $resultsHeader3 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[0]} will buy a gift for ${giftRx[1]}`).appendTo(`#resultsList`);
+    $(`#giver`).children().eq(1).remove();
+    $(`#giver`).children().eq(0).remove();
+    $(`#rx`).children().eq(1).remove();
+    $(`#rx`).children().eq(0).remove();
+    $(`#input2`).val(``);
+
+
         const $resultsHeader4 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[1]} will buy a gift for ${giftRx[0]}`).appendTo(`#resultsList`);
+
 } else if (giftGiver.length == 1){
   const $resultsHeader3 = $(`<h2>`).attr(`id`,`results2`).text(`${giftGiver[0]} will buy a gift for ${giftRx[0]}`).appendTo(`#resultsList`);
+  $(`#input2`).val(``);
 } else {
 
 let randomNum = Math.floor((Math.random()*giftRx.length));
