@@ -88,6 +88,7 @@ let randomNum = Math.floor((Math.random()*giftRx.length));
         if (nameCollect2 == giftRx[randomNum]){
           $resultsHeader.text(`${nameCollect2} Draw Again`).appendTo(`#resultsList`);
           $resultsHeader.children().last().remove();
+          $('#accept').hide()
           return;
 
 
