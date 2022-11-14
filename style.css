@@ -1,0 +1,49 @@
+html{
+  border: 5px solid red;
+  height: 100vh;
+}
+
+body {
+  background-image: url("background.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+h1{
+  color: red;
+}
+h4 {
+  margin-top: 0;
+}
+
+h1, h2 {
+  font-family: 'Mountains of Christmas', cursive;
+}
+
+
+#input {
+  width: 275px;
+}
+
+#submit {
+  width: 75px;
+}
+
+#names{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+@media only screen and (max-width: 400px) {
+  h1, h2 {
+    font-size: 1em;
+  }
+}
