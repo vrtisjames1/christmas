@@ -4,6 +4,9 @@ const giftRx = [];
 let statement = true;
 $('#accept').hide()
 $('#reroll').hide()
+$('#input2').hide()
+$('#submit2').hide()
+$('#step2').hide()
 
   let nameCollect  = null;
   let start = 0;
@@ -21,6 +24,15 @@ const $submitName = () => {
   $(`#input`).val(``);
 }
 
+const $complete = () => {
+  $('#input2').show()
+  $('#submit2').show()
+  $('#step2').show()
+  $('#step1').hide()
+  $('#submit').hide()
+  $('#complete').hide()
+    $('#input').hide()
+}
 
 
 //gather results of who is buygin gifts for who
@@ -146,9 +158,16 @@ const $reroll = () => {
   $results();
 }
 
+const $refresh = () => {
+  location.reload();
+}
+
 
       $('#submit').on('click', $submitName);
       $('#submit2').on('click', $results);
       $('#accept').on('click', $accept);
       $('#reroll').on('click', $reroll);
+      $('#complete').on('click', $complete);
+      $('#refresh').on('click', $refresh);
+
 })

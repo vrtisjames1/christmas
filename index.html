@@ -18,12 +18,15 @@
 <body>
   <div id="container">
     <h1>Not-So-Secret-Santa</h1>
-    <h4>*Note: Names must not contain any spaces.
-      Those with partner restrictions must draw names first.*</h4>
+    <h4 id="step1"> Step 1: Add names (one at a time) to people playing game in the first textbobx below. Names must not contain any spaces</h4>
+
+    <h4 id="step2">Step 2: Input name from list in box to have that person partnered with someone at random. Those with partner restrictions must draw names first.</h4>
     <div>
     <input type="text" id="input" placeholder="Name"></input>
     <button id="submit">Add Name</button>
+    <button id="complete">Complete</button>
   </div>
+
     <!-- who is being added -->
     <div id="arrayList">
       <div id="names">
@@ -32,11 +35,12 @@
       </div>
 
 <!-- who is buying gift for who -->
-      <div id="resultsList">
-        <input type="text" id="input2" placeholder="Name"></input>
-        <button id="submit2">Draw</button>
-        <button id="accept">Accept</button>
-        <button id="reroll">Redraw</button>
-        </div>
+<div id="resultsList">
+  <input type="text" id="input2" placeholder="Name"></input>
+  <button id="submit2">Draw</button>
+  <button id="accept">Accept</button>
+  <button id="reroll">Redraw</button>
+  </div>
+  <button id="refresh">Restart</button>
     </div>
 </body>
