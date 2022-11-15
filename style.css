@@ -38,12 +38,20 @@ h1, h2 {
 
 #input2 {
   height: 40px;
-  width: 300px;
+  /* width: 300px; */
   background-color: #ACE1AF;
 }
 
-#submit {margin: 0.3em;
-  width: 85px;
+#submit, #submit2, #accept, #reroll , #complete{
+  height: 40px;
+  margin: 0.3em;
+  background-color: #D8BFD8;
+  border-radius: 10px;
+}
+
+#refresh {
+  background-color: #fd5c63;
+  border-radius: 10px;
 }
 
 #names{
@@ -51,6 +59,7 @@ h1, h2 {
   flex-direction: row;
   justify-content: space-around;
   align-content: space-between;
+
 }
 
 @media only screen and (max-width: 400px) {
@@ -59,12 +68,12 @@ h1, h2 {
   }
 
 
-#submit, #submit2, #accept, #reroll{
-  height: 25px;
+#submit, #submit2, #accept, #reroll , #complete{
+  height: 30px;
   margin: 0.3em;
 }
 
-#resultsList {
+#resultsList, #topList{
   display: flex;
   flex-direction: column;
   text-align: center;

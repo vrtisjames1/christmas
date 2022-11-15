@@ -15,13 +15,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
 </style>
 </head>
+<button id="refresh">Restart</button>
 <body>
   <div id="container">
     <h1>Not-So-Secret-Santa</h1>
-    <h4 id="step1"> Step 1: Add names (one at a time) to people playing game in the first textbobx below. Names must not contain any spaces. Once all names have been added then click "Complete".</h4>
+    <h4 id="step1"> Step 1: Add names (one at a time) to people playing game in the textbobx below. Names must not contain any spaces. Once all names have been added then click "Complete".</h4>
 
-    <h4 id="step2">Step 2: Input name from list in box to have that person partnered with someone at random. Those with partner restrictions must draw names first.</h4>
-    <div>
+    <h4 id="step2">Step 2: Type a name from the "Santa list!" in the textbox below to have that person partnered with someone at random. Those with partner restrictions must draw names first.</h4>
+    <div id="topList">
     <input type="text" id="input" placeholder="Name"></input>
     <button id="submit">Add Name</button>
     <button id="complete">Complete</button>
@@ -41,6 +42,6 @@
   <button id="accept">Accept</button>
   <button id="reroll">Redraw</button>
   </div>
-  <button id="refresh">Restart</button>
+
     </div>
 </body>
